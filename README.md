@@ -73,7 +73,7 @@ Open up the cloned repository and do the following:
 - Set `NEXT_PUBLIC_SANITY_PROJECT_ID` to the project id you copied earlier
 - Set `NEXT_PUBLIC_SANITY_DATASET` to `production` or the dataset name you used.
 - Set `NEXT_PUBLIC_SANITY_API_VERSION` to your current date in **YYYY-MM-DD** format or leave as is
-- If you want to use an access token, visit [sanity.io/manage][sanity-manage] > **project name** > **API** > **Token** to create one. Once generated, copy the token and set it to `NEXT_PUBLIC_SANITY_ACCESS_TOKEN`.
+- If you want to use an access token, visit [sanity.io/manage][sanity-manage] > **project name** > **API** > **Token** to create one. Once generated, copy the token and set it to `SANITY_ACCESS_TOKEN`.
 
 > [!Warning]
 > If you don't want to use a token, comment it out in the [env.api.ts][env-api] file or else it will throw errors.
