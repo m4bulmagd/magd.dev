@@ -10,13 +10,6 @@ export const dataset: string = checkValue(
   "https://sanity.io"
 );
 
-export const token = checkValue(
-  process.env.SANITY_ACCESS_TOKEN,
-  "SANITY_ACCESS_TOKEN",
-  "https://sanity.io"
-);
-
-export const hookSecret = process.env.SANITY_HOOK_SECRET;
 export const mode = process.env.NODE_ENV;
 
 export const apiVersion =

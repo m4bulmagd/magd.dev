@@ -1,4 +1,5 @@
-import { hookSecret } from "@/lib/env.api";
+import { hookSecret } from "@/lib/env.secret";
+
 import { revalidateTag } from "next/cache";
 import { type NextRequest, NextResponse } from "next/server";
 import { parseBody } from "next-sanity/webhook";
