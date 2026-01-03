@@ -34,6 +34,16 @@ export const profileQuery = groq`*[_type == "profile"][0]{
   usage
 }`;
 
+export const educationQuery = groq`*[_type == "education"] | order(endDate desc){
+  _id,
+  name,
+  degree,
+  "logo": logo.asset->url,
+  startDate,
+  endDate,
+}`;
+
+
 export const jobQuery = groq`*[_type == "job"] | order(_createdAt desc){
   _id,
   name,

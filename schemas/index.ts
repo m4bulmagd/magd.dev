@@ -1,4 +1,5 @@
 import job from "./job";
+import education from "./education";
 import profile from "./profile";
 import project from "./project";
 import post from "./post";
@@ -12,6 +13,7 @@ import quiz from "./quiz";
 export const schemaTypes = [
   profile,
   job,
+  education,
   project,
   post,
   author,

@@ -46,6 +46,15 @@ export type JobType = {
   endDate: string;
 };
 
+export type EducationType = {
+  _id: string;
+  name: string;
+  degree: string;
+  logo: string;
+  startDate: string;
+  endDate: string;
+};
+
 export type ProjectType = {
   _id: string;
   name: string;

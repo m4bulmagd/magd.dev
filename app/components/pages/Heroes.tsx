@@ -11,6 +11,9 @@ export default async function Heroes() {
     tags: ["heroe"],
   });
 
+  // if no heroes, return nothing
+  if (heroes.length === 0) return null;
+
   return (
     <section className="mt-32 max-w-5xl">
       <Slide delay={0.17}>
@@ -40,9 +43,8 @@ export default async function Heroes() {
             <EasterEgg isMet={heroe.met} />
             <RefLink
               href={heroe.url}
-              className={`font-incognito tracking-wide hover:underline ${
-                heroe.met && "dark:text-green-300 text-green-800"
-              }`}
+              className={`font-incognito tracking-wide hover:underline ${heroe.met && "dark:text-green-300 text-green-800"
+                }`}
             >
               {heroe.name}
             </RefLink>

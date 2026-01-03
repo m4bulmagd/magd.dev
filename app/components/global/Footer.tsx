@@ -1,6 +1,6 @@
 import Image from "next/image";
 import sanitylogo from "@/public/sanity.png";
-import vercellogo from "@/public/vercel.svg";
+// import vercellogo from "@/public/vercel.svg";
 import nextjslogo from "@/public/nextjs.svg";
 import UnmountStudio from "./Unmount";
 
@@ -44,7 +44,7 @@ export default function Footer() {
                   Next.js
                 </a>
               </li>
-              <li>
+              {/* <li>
                 <a
                   href="https://vercel.com"
                   rel="noreferrer noopener"
@@ -59,7 +59,7 @@ export default function Footer() {
                   />{" "}
                   Vercel
                 </a>
-              </li>
+              </li> */}
             </ul>
           </div>
 
