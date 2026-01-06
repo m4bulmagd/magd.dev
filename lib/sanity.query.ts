@@ -44,7 +44,7 @@ export const educationQuery = groq`*[_type == "education"] | order(endDate desc)
 }`;
 
 
-export const jobQuery = groq`*[_type == "job"] | order(_createdAt desc){
+export const jobQuery = groq`*[_type == "job"] | order(endDate desc){
   _id,
   name,
   jobTitle,
