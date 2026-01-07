@@ -71,8 +71,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       images:
         urlFor(post.coverImage?.image).width(680).height(340).url() ||
         fallbackImage,
-      creator: `@${post.author.twitterUrl.split("twitter.com/")[1]}`,
-      site: `@${post.author.twitterUrl.split("twitter.com/")[1]}`,
+      creator: `@${post.author.twitterUrl.split("x.com/")[1]}`,
+      site: `@${post.author.twitterUrl.split("x.com/")[1]}`,
       card: "summary_large_image",
     },
   };
@@ -181,7 +181,7 @@ export default async function Post({ params }: Props) {
                     rel="noreferrer noopener"
                     target="_blank"
                   >
-                    {`@${post.author.twitterUrl.split("twitter.com/")[1]}`}
+                    {`@${post.author.twitterUrl.split("x.com/")[1]}`}
                   </a>
                 </div>
               </address>

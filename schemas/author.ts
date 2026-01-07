@@ -26,7 +26,7 @@ export default defineType({
     }),
     defineField({
       name: "twitterUrl",
-      title: "Twitter URL",
+      title: "X/Twitter URL",
       type: "url",
       validation: (rule) => rule.required(),
     }),
