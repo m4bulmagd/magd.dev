@@ -40,6 +40,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!post) {
     notFound();
   }
+  const ogImage = post.coverImage?.image
+    ? urlFor(post.coverImage.image).width(1200).height(630).url()
+    : fallbackImage;
 
   return {
     title: `${post.title}`,
@@ -52,9 +55,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         post.canonicalLink || `https://magd.dev/blog/${post.slug}`,
     },
     openGraph: {
-      images:
-        urlFor(post.coverImage?.image).width(1200).height(630).url() ||
-        fallbackImage,
+      images: ogImage,
       url: `https://magd.dev/blog/${post.slug}`,
       title: post.title,
       description: post.description,
@@ -68,9 +69,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     twitter: {
       title: post.title,
       description: post.description,
-      images:
-        urlFor(post.coverImage?.image).width(680).height(340).url() ||
-        fallbackImage,
+      images: ogImage,
       creator: `@${post.author.twitterUrl.split("x.com/")[1]}`,
       site: `@${post.author.twitterUrl.split("x.com/")[1]}`,
       card: "summary_large_image",
