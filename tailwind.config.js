@@ -13,9 +13,6 @@ module.exports = {
         inter: ["var(--inter)"],
       },
       colors: {
-        // "primary-color": "#33E092",
-        // "secondary-color": "#0CCE6B",
-        // "tertiary-color": "#16a34a",
         "primary-color": "#33C2E0",   // Bright Cyan-Blue
         "secondary-color": "#0C8DCE", // Deep Sky Blue
         "tertiary-color": "#1666A3",   // Strong Ocean Blue
@@ -35,7 +32,7 @@ module.exports = {
       },
       backgroundImage: {
         noise:
-          "url('https://res.cloudinary.com/victoreke/image/upload/v1691779257/victoreke/noise.png')",
+          "url('https://res.cloudinary.com/magd/image/upload/v1767963118/noise.png')",
       },
       backgroundPosition: {
         zero: "0 0",
