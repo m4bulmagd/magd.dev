@@ -85,12 +85,11 @@ export default async function Post({ params }: Props) {
     qParams: { slug },
   });
 
-  const words = toPlainText(post.body);
-
   if (!post) {
     notFound();
   }
 
+  const words = toPlainText(post.body);
   return (
     <main className="max-w-7xl mx-auto md:px-16 px-6">
       <header>
