@@ -24,9 +24,9 @@ Follow this guide to get this site runnning locally:
 ### Clone Repository
 
 ```js
-git clone https://github.com/Evavic44/victoreke.com.git
+git clone https://github.com/m4bulmagd/magd.dev.git
 
-cd victoreke.com
+cd magd.dev
 
 npm install
 ```
@@ -120,9 +120,9 @@ This portfolio is MIT-licensed so you are free to use it as an inspiration or yo
 [reactrefractor]: https://github.com/rexxars/react-refractor
 [site]: https://magd.dev
 [studio]: https://magd.dev/studio
-[env-example]: https://github.com/Evavic44/victoreke.com/blob/main/.env.example
+[env-example]: https://github.com/m4bulmagd/magd.dev/blob/main/.env.example
 [localhost]: http://localhost:3000
 [localhost-studio]: http://localhost:3000/studio
-[env-api]: https://github.com/Evavic44/victoreke.com/blob/main/lib/env.api.ts
+[env-api]: https://github.com/m4bulmagd/magd.dev/blob/main/lib/env.api.ts
 [sanity-manage]: https://sanity.io/manage
 [sanity-guide]: https://www.freecodecamp.org/news/how-to-build-a-portfolio-site-with-sanity-and-nextjs
