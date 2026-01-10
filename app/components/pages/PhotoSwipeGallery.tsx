@@ -20,7 +20,8 @@ export default function PhotoSwipeGallery({ photos }: PhotoSwipeGalleryProps) {
   }
 
   useEffect(() => {
-    if (!photos.length || !galleryRef.current) return;
+    const galleryElement = galleryRef.current;
+    if (!photos.length || !galleryElement) return;
 
     let cleanup: (() => void) | undefined;
 
@@ -32,7 +33,7 @@ export default function PhotoSwipeGallery({ photos }: PhotoSwipeGalleryProps) {
       const PhotoSwipeLightbox = PhotoSwipeLightboxModule.default;
 
       const lightbox = new PhotoSwipeLightbox({
-        gallery: galleryRef.current,
+        gallery: galleryElement,
         children: 'a',
         pswpModule: PhotoSwipe,
         paddingFn: (viewportSize) => {
@@ -88,7 +89,7 @@ export default function PhotoSwipeGallery({ photos }: PhotoSwipeGalleryProps) {
           >
             <img
               src={thumbnailUrl}
-              alt={photo.alt || photo.title}
+              alt={photo.title}
               className="w-full h-64 object-cover transform group-hover:scale-110 transition-transform duration-500"
               loading="lazy"
             />
