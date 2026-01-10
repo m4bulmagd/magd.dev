@@ -46,6 +46,20 @@ export type JobType = {
   endDate: string;
 };
 
+export type PhotoType = {
+  _id: string;
+  title: string;
+  location: string;
+  image: string;
+  metadata: {
+    dimensions: {
+      width: number;
+      height: number;
+    };
+  };
+  order: number;
+};
+
 export type EducationType = {
   _id: string;
   name: string;

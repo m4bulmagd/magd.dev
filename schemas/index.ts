@@ -3,6 +3,7 @@ import education from "./education";
 import profile from "./profile";
 import project from "./project";
 import post from "./post";
+import photo from "./photo";
 import author from "./author";
 import heroe from "./heroe";
 import { youtube } from "./youtube";
@@ -16,6 +17,7 @@ export const schemaTypes = [
   education,
   project,
   post,
+  photo,
   author,
   heroe,
 

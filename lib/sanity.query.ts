@@ -43,6 +43,20 @@ export const educationQuery = groq`*[_type == "education"] | order(endDate desc)
   endDate,
 }`;
 
+export const photosQuery = groq`*[_type == "photo"] | order(order asc, _createdAt desc) {
+  _id,
+  title,
+  location,
+  "image": image.asset->url,
+  "metadata": image.asset->metadata {
+    dimensions {
+      width,
+      height
+    }
+  },
+  order
+}`;
+
 
 export const jobQuery = groq`*[_type == "job"] | order(endDate desc){
   _id,
