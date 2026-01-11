@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     url: "https://magd.dev/blog",
     description: "Read latest stories from Muhammad Abulmagd's Blog",
     images:
-      "https://res.cloudinary.com/magd/image/upload/v1767974080/blogs.png",
+      "https://res.cloudinary.com/magd/image/upload/v1768118047/blogs.png",
   },
 };
 

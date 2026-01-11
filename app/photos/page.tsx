@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     url: "https://magd.dev/photos",
     description: "Explore photos taken by Muhammad Abulmagd",
     images:
-      "https://res.cloudinary.com/magd/image/upload/v1767974078/photos.png",
+      "https://res.cloudinary.com/magd/image/upload/v1768118116/photos.png",
   },
 };
 

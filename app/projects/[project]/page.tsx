@@ -16,7 +16,7 @@ type Props = {
 };
 
 const fallbackImage: string =
-  "https://res.cloudinary.com/magd/image/upload/v1767974078/projects.png";
+  "https://res.cloudinary.com/magd/image/upload/v1768118073/projects.png";
 
 // Dynamic metadata for SEO
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
