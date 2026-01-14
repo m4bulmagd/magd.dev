@@ -7,6 +7,7 @@ import { gitlabmono } from "./assets/font/font";
 import Navbar from "./components/global/Navbar";
 import Footer from "./components/global/Footer";
 import { Providers } from "./providers";
+import Schema from "./components/global/Schema";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -25,6 +26,11 @@ export const metadata: Metadata = {
   title: options.title,
   metadataBase: new URL(options.url),
   description: options.description,
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/icon_192.png",
+    apple: "/icon_180.png",
+  },
   openGraph: {
     title: options.title,
     url: options.url,
@@ -32,6 +38,14 @@ export const metadata: Metadata = {
     locale: "en-US",
     type: "website",
     description: options.description,
+    images: [
+      {
+        url: "/logo.png",
+        width: 1200,
+        height: 630,
+        alt: "Muhammad Abulmagd",
+      },
+    ],
   },
   alternates: {
     canonical: options.url,
@@ -52,6 +66,7 @@ export default function RootLayout({
           <Navbar />
           {children}
           <Footer />
+          <Schema />
         </Providers>
       </body>
       <Script
