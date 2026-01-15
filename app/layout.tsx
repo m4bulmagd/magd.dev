@@ -17,9 +17,9 @@ const inter = Inter({
 });
 
 const options = {
-  title: "Muhammad Abulmagd | Machine Learning/Software Engineer",
+  title: "Muhammad Abulmagd | Machine Learning & Software Engineer",
   description:
-    "Muhammad Abulmagd is a Machine Learning/Software Engineer who is passionate about building solutions",
+    "Muhammad Abulmagd is a Machine Learning and Software Engineer who is passionate about building AI solutions.",
   url: "https://magd.dev",
 };
 
@@ -29,9 +29,9 @@ export const metadata: Metadata = {
   description: options.description,
   icons: {
     icon: [
-      { url: "/favicon.ico" },
       { url: "/icon_192.png", sizes: "192x192", type: "image/png" },
       { url: "/icon_512.png", sizes: "512x512", type: "image/png" },
+      { url: "/favicon.ico" },
     ],
     apple: [
       { url: "/icon_180.png" },
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     description: options.description,
     images: [
       {
-        url: "/logo.png",
+        url: "/og.png",
         width: 1200,
         height: 630,
         alt: "Muhammad Abulmagd",

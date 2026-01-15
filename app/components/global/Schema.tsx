@@ -8,10 +8,10 @@ export default function Schema() {
         url: "https://magd.dev",
         image: "https://magd.dev/logo.png",
         description:
-            "Muhammad Abulmagd is a Machine Learning/Software Engineer who is passionate about building solutions",
-        jobTitle: "Software Engineer",
+            "Muhammad Abulmagd is a Machine Learning and Software Engineer who is passionate about building AI solutions.",
+        jobTitle: "Machine Learning & Software Engineer",
         sameAs: [
-            "https://github.com/m4bulmagd", // Assuming detailed in Social component, but good to have here
+            "https://github.com/m4bulmagd",
             "https://linkedin.com/in/m4bulmagd",
             "https://x.com/m4bulmagd",
         ],
