@@ -8,6 +8,7 @@ import Navbar from "./components/global/Navbar";
 import Footer from "./components/global/Footer";
 import { Providers } from "./providers";
 import Schema from "./components/global/Schema";
+import { Analytics } from "@vercel/analytics/next"
 
 const inter = Inter({
   subsets: ["latin"],
@@ -27,9 +28,14 @@ export const metadata: Metadata = {
   metadataBase: new URL(options.url),
   description: options.description,
   icons: {
-    icon: "/favicon.ico",
-    shortcut: "/icon_192.png",
-    apple: "/icon_180.png",
+    icon: [
+      { url: "/favicon.ico" },
+      { url: "/icon_192.png", sizes: "192x192", type: "image/png" },
+      { url: "/icon_512.png", sizes: "512x512", type: "image/png" },
+    ],
+    apple: [
+      { url: "/icon_180.png" },
+    ],
   },
   openGraph: {
     title: options.title,
@@ -46,6 +52,9 @@ export const metadata: Metadata = {
         alt: "Muhammad Abulmagd",
       },
     ],
+  },
+  other: {
+    "google-site-verification": "HmDC4zLASorXdwlZWRulop-jt17T3WbUyljOdiYi9Ew",
   },
   alternates: {
     canonical: options.url,
@@ -65,6 +74,7 @@ export default function RootLayout({
         <Providers>
           <Navbar />
           {children}
+          <Analytics />
           <Footer />
           <Schema />
         </Providers>
