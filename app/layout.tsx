@@ -9,6 +9,8 @@ import Footer from "./components/global/Footer";
 import { Providers } from "./providers";
 import Schema from "./components/global/Schema";
 import { Analytics } from "@vercel/analytics/next"
+import { Suspense } from 'react'
+
 import RefTracker from '@/app/components/global/RefTracker'
 
 const inter = Inter({
@@ -75,7 +77,9 @@ export default function RootLayout({
         <Providers>
           <Navbar />
           {children}
-          <RefTracker />
+          <Suspense fallback={null}>
+            <RefTracker />
+          </Suspense>
           <Analytics />
           <Footer />
           <Schema />
