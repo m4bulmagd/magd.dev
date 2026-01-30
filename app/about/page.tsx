@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import { profileQuery } from "@/lib/sanity.query";
 import type { ProfileType } from "@/types";
 import { PortableText } from "@portabletext/react";
-import { BiEnvelope, BiLinkExternal, BiSolidDownload } from "react-icons/bi";
+import { BiEnvelope, BiLinkExternal, BiSolidDownload, BiLogoLinkedinSquare , BiLogoLinkedin } from "react-icons/bi";
 import { CustomPortableText } from "../components/shared/CustomPortableText";
 import Heroes from "../components/pages/Heroes";
 import Usage from "../components/pages/Usage";
@@ -78,17 +78,27 @@ export default async function About() {
                 <div className="flex flex-col text-center gap-y-4">
                   <div className="flex items-center gap-x-3">
                     <RefLink
-                      href="https://www.linkedin.com/in/m4bulmagd/"
-                      className="flex items-center justify-center text-center gap-x-2 basis-[90%] dark:bg-primary-bg bg-zinc-100 border border-transparent dark:hover:border-zinc-700 hover:border-zinc-200 rounded-md py-2 text-lg font-incognito font-semibold"
+                      href={profile?.resumeURL}
+                      className="flex items-center justify-center text-center gap-x-2 basis-[74%] dark:bg-primary-bg bg-zinc-100 border border-transparent dark:hover:border-zinc-700 hover:border-zinc-200 rounded-md py-2 text-lg font-incognito font-semibold"
                     >
                       View Résumé <BiLinkExternal className="text-base" />
                     </RefLink>
                     <a
                       href={`${profile?.resumeURL}?dl=${profile?.fullName}-resume.pdf`}
-                      className="flex items-center justify-center text-center dark:text-primary-color text-secondary-color hover:underline basis-[10%] dark:bg-primary-bg bg-zinc-100 border border-transparent dark:hover:border-zinc-700 hover:border-zinc-200 rounded-md py-3 text-lg"
+                      className="flex items-center justify-center text-center dark:text-primary-color text-secondary-color hover:underline basis-[13%] dark:bg-primary-bg bg-zinc-100 border border-transparent dark:hover:border-zinc-700 hover:border-zinc-200 rounded-md py-3 text-lg"
                       title="Download Resume"
                     >
                       <BiSolidDownload
+                        className="text-lg"
+                        aria-label="Download Resume"
+                      />
+                    </a>
+                    <a
+                      href="https://www.linkedin.com/in/m4bulmagd/"
+                      className="flex items-center justify-center text-center dark:text-primary-color text-secondary-color hover:underline basis-[13%] dark:bg-primary-bg bg-zinc-100 border border-transparent dark:hover:border-zinc-700 hover:border-zinc-200 rounded-md py-3 text-lg"
+                      title="Download Resume"
+                    >
+                      <BiLogoLinkedin
                         className="text-lg"
                         aria-label="Download Resume"
                       />
